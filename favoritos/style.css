@@ -1,0 +1,90 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, black 30%, white 400%);
+    height: 10vh;
+    color: white;
+    gap: 0.3rem;
+}
+
+.nomeLogo {
+    height: 10vh;
+    padding-right: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 70vw;
+}
+
+.nomeELogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22vw;
+}
+
+.iconsHeader {
+
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 15vw;
+}
+.iconeFavorito{
+    padding-left: 0.5vh;
+    height: 7vh;
+    width: 3.5vw;
+}
+
+.iconePerfil {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 4vw;
+}
+
+.iconeCarrinho {
+    height: 9vh;
+    width: 4vw;
+}
+
+.iconePerfil {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 4vw;
+}
+
+.iconeCarrinho {
+    height: 9vh;
+    width: 4vw;
+}
+main{
+    height: 90vh;
+    background: linear-gradient(to top, black 30% , white 400%);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.logo{
+    margin-top: 2%;
+    height: 14vh;
+    width: 7vw;
+}

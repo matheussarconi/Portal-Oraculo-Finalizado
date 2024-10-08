@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../paginaProdutos/produto.css"> -->
+    <link rel="stylesheet" href="../adiministrador/adm.css">
+</head>
+<body>
+    <header>
+        <div class="nomeLogo">
+            <h1 class="nomeSite">Portal do oráculo ADMIN</h1>
+            <img class="logo" src="../Imagens/logo-removebg-preview.png" alt="Logo do Portal do oráculo">
+        </div>
+            
+        <section class="iconsHeader">
+            <a class="linkLogin" href="../login/login.html"><img class="iconePerfil" src="../Imagens/iconePerfil.png" alt=""> </a>
+            <a class="linkCarrinho" href="../carrinho/carrinho.html"><img class="iconeCarrinho" src="../Imagens/carrinhoDeCompras.png" alt=""></a>
+            <a href="../adiministrador/adicionarProduto.html">Adicionar produtos</a>
+        </section>
+    </header>
+
+    <main class="main" id="main">
+        <h2 class="nomeCategoria">Beijos de aliens:</h2>
+        <section class="linhaDeCima">
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <button class="botaoImagem">
+                        <a href="../paginaDeUmProduto/Charrado.html">
+                            <img class="produtosImagem" src="../Imagens/aliens/Charrado.png" alt="">
+                        </a>
+                    </button>
+                    <button class="botaoEditar" ><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                </div>
+                <p class="nomeProduto">Beijo da Charrado<strong class="preco">R$200</strong></p>
+            </div>
+            <div class="divEditarCharrado">
+                <form class="form" id="formEditar">
+                    <input type="number" placeholder="Quantidade disponível:">
+                    <input type="text" placeholder="Alterar descrição:" id="novaDescricao">
+                    <input type="number" placeholder="Alterar preço em reais:">
+                    <input type="submit">
+                </form>
+            </div>
+            
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/BiroBiro.html">
+                        <img class="produtosImagem" src="../Imagens/aliens/BiroBiro.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Beijo da BiroBiro <strong class="preco">R$300</strong></p>
+            </div>
+            <div class="divEditarBiroBiro">
+                <form class="form">
+                    
+                    <input class="enviar" onclick="enviarCarrinhoCharrado()" placeholder="Enviar">
+                </form>
+            </div>
+            <div class="divEditarGrod">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Grod" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoGrod()" placeholder="Enviar">
+                </form>
+            </div>
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/Grod.html">
+                        <img class="produtosImagem" src="../Imagens/aliens/Grod.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Beijo do Grod <strong class="preco">R$700</strong></p>
+            </div>
+            <div class="divEditarGrod">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Grod" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoGrod()" placeholder="Enviar">
+                </form>
+            </div>
+        </section>
+
+        <section class="linhaDeCima">
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/Roxane.html">
+                        <img class="produtosImagem" src="../Imagens/aliens/Roxane.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Beijo da Roxane<strong class="preco">R$400</strong></p>
+            </div>
+            <div class="divEditarRoxane">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Roxane" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoRoxane()" placeholder="enviar">
+                </form>
+            </div>
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/PiroPiro.html">
+                        <img class="produtosImagem" src="../Imagens/aliens/PiroPiro.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Beijo da PiroPiro<strong class="preco">R$900</strong></p>
+            </div>
+            <div class="divEditarPiroPiro">
+                <form class="form">
+                    <input class="quantidade"
+                    id="PiroPiro" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoPiroPiro()" placeholder="Enviar">
+                </form>
+            </div>
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/Azulety.html">
+                        <img class="produtosImagem" src="../Imagens/aliens/Azulety.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Beijo da Azulety <strong class="preco">R$800</strong></p>
+            </div>
+            <div class="divEditarAzulety">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Azulety" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoAzulety()" placeholder="Enviar">
+                </form>
+            </div>
+        </section>
+        <h2 class="nomeCategoria">Poções de efeitos diversos:</h2>
+        <section class="linhaDeCima">
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <button class="botaoImagem">
+                        <a href="../paginaDeUmProduto/poção1Amor.html">
+                            <img class="produtosImagem" src="../Imagens/Poções/poção1.png" alt="">
+                        </a>
+                    </button>
+                    <button class="botaoEditar"><img class = "editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                </div>
+                <p class="nomeProduto">Poção do amor<strong class="preco">R$200</strong></p>
+            </div>
+            <div class="divEditarAmor">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Amor" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoAmor()" placeholder="Enviar">
+                </form>
+            </div>
+            
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/poção2Voo.html">
+                        <img class="produtosImagem" src="../Imagens/Poções/poção2.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class = "editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Poção de voo <strong class="preco">R$200</strong></p>
+            </div>
+            <div class="divEditarVoo">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Voo" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoVoo()" placeholder="Enviar">
+                </form>
+            </div>
+            <div class="bordaProdutos">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/poção3Força.html">
+                        <img class="produtosImagem" src="../Imagens/Poções/poção3.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProduto">Poção de força<strong class="preco">R$200</strong></p>
+            </div>
+            <div class="divEditarForca">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Forca" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoForca()" placeholder="Enviar">
+                </form>
+            </div>
+        </section>
+
+        <section class="linhaDeCima">
+            <div class="bordaProdutosGrandes">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/poção4Resist.html">
+                        <img class="produtosImagem" src="../Imagens/Poções/poção4.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProdutoGrande">Poção de resistencia<strong class="preco">R$200</strong></p>
+            </div>
+            <div class="divEditarResist">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Resist" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoResist()" placeholder="Enviar">
+                </form>
+            </div>
+            <div class="bordaProdutosGrandes">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/poção5Vel.html">
+                        <img class="produtosImagem" src="../Imagens/Poções/poção5.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class = "editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProdutoGrande">Poção de velo...<strong class="preco">R$200</strong></p>
+            </div>
+            <div class="divEditarVel">
+                <form class="form">
+                    <input class="quantidade"
+                    id="Vel" type="number" placeholder="Quantos desse produto você que adicionar?">
+                    <input class="enviar" onclick="enviarCarrinhoVel()" placeholder="Enviar">
+                </form>
+            </div>
+            <div class="bordaProdutosGrandes">
+                <div class="divProdutos">
+                    <a href="../paginaDeUmProduto/poçãoInvisibilidade.html">
+                        <img class="produtosImagem" src="../Imagens/Poções/poção.png" alt="">
+                    </a>
+                    <button class="botaoEditar"><img class="editarIcon" src="../Imagens/editar.png" alt="carrinho de compras"></button>
+                    
+                </div>
+                    <p class="nomeProdutoGrande">Poção de invi... <strong class="preco">R$200</strong></p>
+            </div>
+
+    </main>
+    <script src="../adiministrador/adm.js"></script>
+    <script src="../paginaProdutos/produtos.js"></script>
+    <script src="../login/login.js"></script>
+</body>
+</html>

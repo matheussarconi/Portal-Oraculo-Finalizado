@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../adiministrador/adicionarProduto.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="nomeSite">Portal do oráculo</h1>
+        <img class="logo" src="../Imagens/logo.png" alt="Logo do Portal do oráculo">
+    </header>
+    <main>
+        <div class="divPrincipal">
+
+            <h1>Adicionar Produtos</h1>
+            <div class="completar">
+                <form id="formAddProduto">
+                    <p class="nomes">Nome do produto</p>
+                    <div class="escrever">
+                        <input type="text" placeholder="Digite o nome do produto aqui" class="digitarNome" id="nome"
+                            required>
+                    </div>
+
+                    <p class="nomes">Preço</p>
+                    <div class="escrever">
+                        <input type="number" placeholder="Digite o preço do produto aqui" class="digitarPreco"
+                            id="preco" required>
+                    </div>
+
+                    <p class="nomes">Descrição</p>
+                    <div  class="escrever">
+                        <input type="text" placeholder="Digite a descrição do produto aqui" class="digitarDescricao"
+                            id="descricao" required>
+                    </div>
+                    <p class="nomes">Quantidade</p>
+                    <div  class="escrever">
+                        <input type="number" placeholder="Digite a quanditade disponivel do produto aqui"
+                            class="digitarQuantidade" id="quantidade" required>
+                    </div>
+                    <p class="imagem">Foto do produto</p>
+                    <div  class="escrever">
+                        <input type="file" id="file">
+                    </div>
+
+            </div>
+            <div class="decorarSubmit">
+                <input type="submit" value="Acessar" onclick="cadastrarProduto(event)" class="botaoSubmit">
+            </div>
+
+            </form>
+        </div>
+
+    </main>
+    <script src="../adiministrador/adm.js"></script>
+    <script src="../adiministrador/adicionarProduto.js"></script>
+</body>
+
+</html>

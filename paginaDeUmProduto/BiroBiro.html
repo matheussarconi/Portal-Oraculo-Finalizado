@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="paginaDeUmProduto.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="nomeLogo">
+                <h1 class="nomeSite">Portal do oráculo</h1>
+                <img class="logo" src="../Imagens/logo-removebg-preview.png" alt="Logo do Portal do oráculo">
+            </div>
+                
+            <section class="iconsHeader">
+                
+                <a class="linkLogin" href="../login/login.html"><img class="iconePerfil" style="height: 10vh; width: 5vw;" src="../Imagens/iconePerfil.png" alt=""> </a>
+                
+                <a class="linkCarrinho" href="../carrinho/carrinho.html"><img class="iconeCarrinho" src="../Imagens/carrinhoDeCompras.png" alt=""></a>
+    
+            </section>
+            
+        </header>
+        <main class="main">
+            <section id="produto">
+                    <div class="imagem">
+                        <img id="pocao" src="../Imagens/aliens/BiroBiro.png" alt="imagem do produto clicado">
+                    </div>
+                <button class="comprar">Comprar</button>
+                <button class="carrinho" id="addCarrinho">Adicionar ao Carrinho</button>
+
+                
+            </section>
+    
+        <section id="descricaoProduto">
+                <h2>Beijo do BiroBiro</h2>
+                <div class="texto">
+                    <h3> O beijo confere à pessoa a habilidade de alterar sua gravidade pessoal. Ela pode escolher se sentir mais leve para saltar alturas impressionantes ou mais pesada para fixar-se firmemente ao chão, ideal para dias de ventania.</h3>
+                </div>
+            
+                <div class="estrelas">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+    
+                <div>
+                    <h3 class="preco">R$300</h3>
+                    <p>Em até 12x sem juros</p>
+                </div>
+    
+        </section>
+    </main>
+    
+    <div class="popup">
+        <h2 class="titulo">Dados para compra:</h2>
+        <form>
+            <div class="alinhar">
+                <div class="meio">
+                    <section class="linha1">
+                        <input class="nome" style=" padding-left: 0.5rem;" type="text" placeholder="Nome" required>
+                        <input class="cep" style=" padding-left: 0.5rem;" type="number" placeholder="CEP" required>
+                        <input class="estado" style=" padding-left: 0.5rem;" type="text" placeholder="Estado" required>
+                        <input class="bairro" style=" padding-left: 0.5rem;" type="text" placeholder="Bairro" required>
+                        <input class="rua" style=" padding-left: 0.5rem;" type="text" placeholder="Rua/Avenida" required>
+                    </section>
+        
+                    <section class="linha1">
+                        <input class="numeroCasa" style=" padding-left: 0.5rem;" type="number"placeholder="Número da residência" required>
+                        <input class="numero" style=" padding-left: 0.5rem;" type="number" placeholder="Número de telefone" required>
+        
+                        
+                            <div class="pagamentos">
+                                <input type="radio" name="pagamento" style=" margin-left: 1rem; height: 2rem; width: 2rem;" id="pix" required>
+                                <label for="pix"></label>
+                                <img class="pix" src="../Imagens/pix.jpeg" alt="">
+                            </div>
+        
+        
+                            <div class="pagamentos">
+                                <input type="radio" name="pagamento" style=" margin-left: 1rem; height: 2rem; width: 2rem;" id="credito" required>
+                                <label for="credito"> </label>
+                                <div class="cartoes">
+                                    <img class="cartao" src="../Imagens/cartao.jpg" alt="">
+                                    <h4>Crédito</h4>
+                                </div>
+                            </div>
+        
+                            <div class="pagamentos">
+                                <input type="radio" name="pagamento" style=" margin-left: 1rem; height: 2rem; width: 2rem;" id="debito" required>
+                                <div class="cartoes">
+                                    <label for="debito"></label>
+                                    <img class="cartao2" src="../Imagens/cartao.jpg" alt="">
+                                    <h4>Débito</h4>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+              
+                <input id="botao" type="submit" value="Confirmar compra"  formaction="../compraConfirmada/compraConfirmada.html"> 
+        
+            </div>
+            </div>
+        </form>
+      <script src="./paginaDeUmProduto.js"></script>
+    </body>
+    </html>

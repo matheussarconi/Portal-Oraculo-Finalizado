@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+<main>
+    <div class="divPrincipal">
+        <div>
+            <h1>Cadastro</h1>
+            <form id="formCadastro">
+                <p class="nomes">Nome</p>
+                <div>
+                    <input type="text" placeholder="Digite seu nome" class="digitarEmail" id="nomeUsuario" required>
+                </div>
+
+                <p class="nomes">Email</p>
+                <div>
+                    <input type="text" placeholder="Digite seu Email" class="digitarEmail" id="email" required>
+                </div>
+
+                <p class="nomes">Senha</p>
+                <div>
+                    <input type="text" placeholder="Digite sua senha" class="digitarSenha" id="senha" required>
+                </div>
+
+                <p id="termos">Ao clicar em "Acessar", aceito os Termos e condições e autorizo o uso dos meus dados de acordo com a Declaração de privacidade.</p>
+                <div class="decorarSubmit">
+                    <button onclick="cadastrar(event)" class="botaoSubmit">Acessar</button>
+                    <!-- <input  type="submit" value="Acessar" class="botaoSubmit"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</main>
+<script src="../cadastro/cadastro.js"></script>
+</body>
+</html>
